@@ -12,6 +12,5 @@ window.onload = function () {
   setTimeout(function () {
     preload.remove();
   }, 1200);
-
 };
 // Preloader END
