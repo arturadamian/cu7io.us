@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
   var FOOTER_APPEARS = 400;
-  var TRIGGER = 80; // size of the footer
+  var FOOTER_HEIGHT = 80;
 
   var IS_FIREFOX = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
@@ -31,18 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var myWorksContentTop
 
-	var myWorksContentTop
+  var myWorksContentTop
   var worksDescriptions = [
     '<h4>SentiSum</h4><p>Leverage AI to gain competitive advantage.</p><br/><p>Tech Stack: <ul><li> Node.js / Feathers.js / MongoDB</li><li>React.js / Webpack / Ant.d / Socket.io</li><li>Docker / AWS / NginX</li></ul></p><a target="_blank" href="//sentisum.com" class="border-button">Check Online</a>',
     '<h4>Zentist</h4><p>Find and finance high-quality and affordable dental care</p><br/><p>Tech Stack: <ul><li>PHP FPM / Symphony / MySQL</li><li>Angular.js / React.js / SASS / jQuery</li><li>AWS / Ubuntu LEMP Stack</li></ul></p><a target="_blank" href="//zentist.io" class="border-button">Check Online</a>',
     '<h4>MotoPress</h4><p>MotoPress Visual Page Builder enhances the standard WordPress builder and enables to build websites visually. It’s the complete solution for building responsive pages without coding and simply by dragging and dropping content elements.</p><br/><p>Tech Stack: <ul><li>Ubuntu LAMP stack</li><li>jQuery /JMVC / Grunt.js</li><li>WordPress / Composer</li></ul></p><a target="_blank" href="//getmotopress.com" class="border-button">Check Online</a>',
-	];
+  ];
 
   var worksPictures = [
     '<img src="./assets/images/Senti1.png"><img src="./assets/images/Senti2.png"><img src="./assets/images/Senti3.png">',
     '<img src="./assets/images/zent5.jpg"><img src="./assets/images/zent2.jpg"><img src="./assets/images/zent3.jpg"><img src="./assets/images/zent4.jpg"><img src="./assets/images/zent.jpg">',
     '<img src="./assets/images/moto2.jpg"><img src="./assets/images/Moto4.png"><img src="./assets/images/moto3.png"><div style="position:relative;height:0;padding-bottom:75.0%"><iframe src="https://www.youtube.com/embed/Q8fdnBmwtOY?ecver=2" width="480" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>'
-	];
+  ];
 
   // Utils
   function fade() {
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (position > lastScrollTop) {
       // downscroll code
-      if (position > height - TRIGGER) {
+      if (position > height - FOOTER_HEIGHT) {
         footer.classList.remove('footer-closed');
         footerLogo.style.opacity = '1';
       } else {
@@ -306,10 +306,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var CNT = 0;
     var Sentences = [
       "Reactive Web Apps..",
-      "Bulletproof API's..",
+      "Bulletproof APIs..",
       "Robust WordPress Themes..",
-      "Cool WordPress Plugins..",
-      "Tasty Website Templates.."
+      "Handcrafted Plugins..",
+      "Tasty Web Templates.."
     ];
 
     var str;
