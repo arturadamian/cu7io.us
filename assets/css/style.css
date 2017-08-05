@@ -1,6 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,300);
-
 /* O1. RESETS ================================================== */
 .clearfix:after {
   content: "";
@@ -22,6 +21,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  -webkit-font-smoothing: antialiased;
 }
 :focus {
   outline: 0;
